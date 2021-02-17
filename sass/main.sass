@@ -34,4 +34,32 @@ body
                 &:hover
                     text-decoration: none
                     &::after
-                        transform: translateY(47px) scale(1)      
+                        transform: translateY(47px) scale(1)   
+.left-sidebar
+    margin-top: 40px
+    background-color: $white
+    &__menu
+        list-style: none
+        padding: 0
+        li
+          transition: all 0.1s
+          &:first-child
+            a
+              padding-top: 18px
+          &:last-child
+            a
+              padding-bottom: 18px
+          &:hover
+            transition: all 0.1s
+            background-color: $active-color
+            a
+              color: $white
+
+          a
+            display: block
+            padding: 15px 29px
+            text-decoration: none
+            color: $dark
+            font-size: 16px
+            font-weight: 400
+        
